@@ -55,6 +55,8 @@
 #pragma mark - convenient method
 -(void)mapView:(MKMapView *)mapView zoomToCoordinate:(CLLocationCoordinate2D)coordinate radius:(CGFloat)radius{
     
+    NSLog(@"the radius :%f", radius);
+    
     //clean overlays
     if ([[mapView overlays] count]) {
         [mapView removeOverlays:[mapView overlays]];
@@ -62,7 +64,7 @@
     
     
     //set region
-    MKCoordinateRegion adjustedRegion = [mapView regionThatFits:MKCoordinateRegionMakeWithDistance(coordinate, radius, radius)];
+    MKCoordinateRegion adjustedRegion = [mapView regionThatFits:MKCoordinateRegionMakeWithDistance(coordinate, 2*radius, 2*radius)];
     
     [mapView setRegion:adjustedRegion animated:YES];
     
