@@ -106,7 +106,10 @@
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [_pickerData[row] stringValue];
+    
+    NSString *string = [NSString stringWithFormat:@"%@ m", [_pickerData[row] stringValue]];
+    
+    return string;
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
