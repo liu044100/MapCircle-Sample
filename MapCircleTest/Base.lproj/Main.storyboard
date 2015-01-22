@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MGS-WE-tAo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="438"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Tz5-mY-dIS"/>
+                                </connections>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFL-V9-SM2">
+                                <rect key="frame" x="0.0" y="438" width="600" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="F2P-lW-Uyg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5PH-vJ-nhS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xva-ap-dWV"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RFL-V9-SM2" firstAttribute="top" secondItem="MGS-WE-tAo" secondAttribute="bottom" id="KxG-EJ-0Uy"/>
+                            <constraint firstItem="RFL-V9-SM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="afa-M5-k3Z"/>
+                            <constraint firstItem="MGS-WE-tAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cua-a7-t2f"/>
+                            <constraint firstItem="MGS-WE-tAo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f3R-PK-mSH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RFL-V9-SM2" secondAttribute="bottom" id="pXl-vi-McS"/>
+                            <constraint firstAttribute="trailing" secondItem="MGS-WE-tAo" secondAttribute="trailing" id="v2u-8K-4j6"/>
+                            <constraint firstAttribute="trailing" secondItem="RFL-V9-SM2" secondAttribute="trailing" id="zo8-AP-1ZG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="MGS-WE-tAo" id="eZ2-Xw-bf6"/>
+                        <outlet property="pickerView" destination="RFL-V9-SM2" id="uhi-Ia-LDZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
