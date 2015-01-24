@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E88333A0-A032-4081-BE70-6A71F32E266C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MapCircleTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8CA0CD8489EF08331B53C45E103EC2F1E5485E9</key>
+		<string>https://github.com/liu044100/MapCircle-Sample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MapCircleTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8CA0CD8489EF08331B53C45E103EC2F1E5485E9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/liu044100/MapCircle-Sample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8CA0CD8489EF08331B53C45E103EC2F1E5485E9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8CA0CD8489EF08331B53C45E103EC2F1E5485E9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MapCircle-Sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

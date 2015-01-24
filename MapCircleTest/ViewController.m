@@ -64,7 +64,7 @@
     
     
     //set region
-    MKCoordinateRegion adjustedRegion = [mapView regionThatFits:MKCoordinateRegionMakeWithDistance(coordinate, 2*radius, 2*radius)];
+    MKCoordinateRegion adjustedRegion = [mapView regionThatFits:MKCoordinateRegionMakeWithDistance(coordinate, 4*radius, 4*radius)];
     
     [mapView setRegion:adjustedRegion animated:YES];
     
